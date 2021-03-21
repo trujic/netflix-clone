@@ -1,0 +1,21 @@
+.movie__row {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.movie {
+  width: 300px;
+  height: 200px;
+  margin: 0 2px;
+}
+
+.movies {
+  position: relative;
+  padding-left: 50px;
+  top: -150px;
+  background-color: black;
+}
+
+.movies h1 {
+  color: white;
+}
