@@ -1,0 +1,68 @@
+.login__page {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  background-image: url("https://res.cloudinary.com/spinup/image/upload/v1559249123/x5ypq8ti38akyefbgvng.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  z-index: 99;
+}
+
+.login__nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.sign__in {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+
+
+.login__info {
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+.login__info h1 {
+  font-size: 38px;
+  font-weight: 600
+}
+
+.login__info h2, h4 {
+  font-weight: 400;
+}
+
+.login__info h1, h2, h4 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.login__info input {
+  width: 450px;
+  padding: 10px;
+  margin-left: 60px;
+}
+
+.login__info button {
+  padding: 11px 20px;
+  color: white;
+  background-color: red;
+  border: none;
+  outline: none;
+}
+
+.login__info button:hover {
+  cursor: pointer;
+}
