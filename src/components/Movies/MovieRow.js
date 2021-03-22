@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import "./Movie.css"
 
-const MovieRow = ({title, data}) => {
+const MovieRow = ({title, data, isLarge}) => {
   const [movieList, setMovieList] = useState([])
 
   useEffect(() => {
@@ -17,16 +17,16 @@ const MovieRow = ({title, data}) => {
 
   return(
     <div className="movies">
-    <h1>{title}</h1>
-    <div className="movie__row">
-      {movieList.map(movie => {
-        return(
-          <div className="movie">
-            <img src={`https://image.tmdb.org/t/p/w300${movie.backdrop_path}`} />
-          </div>
-        )
-      })}
-    </div>
+      <h1>{title}</h1>
+      <div className="movie__row">
+        {movieList.map(movie => {
+          return(
+            <div className="movie">
+              {isLarge ? <img className="poster__img" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} /> : <img src={`https://image.tmdb.org/t/p/w300${movie.backdrop_path}`} />}
+            </div>
+          )
+        })}
+      </div>
     </div>
   )
 }

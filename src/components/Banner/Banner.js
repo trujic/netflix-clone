@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import './Banner.css'
+import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+import InfoIcon from '@material-ui/icons/Info';
+
 
 const Banner = () => {
   const [movie, setMovie] = useState([])
@@ -33,8 +36,14 @@ const Banner = () => {
         <h1>{movie.name}</h1>
         <h3>{words(movie.overview, 140)}</h3>
         <div className="movie__cta">
-          <button className="cta">Play</button>
-          <button className="cta">More Info</button>
+          <button className="play">
+            <PlayArrowIcon fontSize="large" className="cta-icons"/>
+            Play
+          </button>
+          <button className="more__info">
+            <InfoIcon fontSize="large" className="cta-icons"/>
+            More Info
+          </button>
         </div>
       </div>
       <div className="fade" />

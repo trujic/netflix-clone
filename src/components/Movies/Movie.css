@@ -1,21 +1,29 @@
 .movie__row {
   display: flex;
   overflow-x: hidden;
+  padding-bottom: 50px;
 }
 
 .movie {
   width: 300px;
-  height: 200px;
   margin: 0 2px;
+}
+
+.poster__img {
+  height: 600px;
+}
+
+.asd {
+  background-color: rgba(19, 19, 19);
 }
 
 .movies {
   position: relative;
-  padding-left: 50px;
-  top: -150px;
-  background-color: black;
+  padding-left: 60px;
+  top: -230px;
 }
 
 .movies h1 {
   color: white;
+  padding-bottom: 10px;
 }

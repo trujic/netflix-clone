@@ -2,6 +2,7 @@
   position: relative;
   background-color: black;
   height: 100vh;
+  width: 100%;
   background-image: url("https://res.cloudinary.com/spinup/image/upload/v1559249123/x5ypq8ti38akyefbgvng.jpg");
   background-size: cover;
   background-position: center;
@@ -11,7 +12,8 @@
 }
 
 .login__nav {
-  position: relative;
+  position: absolute;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,4 +67,14 @@
 
 .login__info button:hover {
   cursor: pointer;
+}
+
+.login__gradient {
+  height: 100vh;
+  background: rgba(0,0,0, 0.3);
+  z-index: 1;
+}
+
+.signin__form {
+  background: rgba(19,19,19);
 }
