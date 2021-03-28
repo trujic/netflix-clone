@@ -7,10 +7,11 @@
 .movie {
   width: 300px;
   margin: 0 2px;
+  z-index: 5;
 }
 
 .poster__img {
-  height: 600px;
+  height: 500px;
 }
 
 .asd {
@@ -20,7 +21,7 @@
 .movies {
   position: relative;
   padding-left: 60px;
-  top: -230px;
+  top: -15rem;
 }
 
 .movies h1 {

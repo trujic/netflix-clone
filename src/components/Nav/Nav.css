@@ -71,3 +71,11 @@ nav {
   color: white;
   border: 1px solid white;
 }
+
+.logout {
+  padding: 6px;
+  background-color: red;
+  color: white;
+  border: none;
+  outline: none;
+}
